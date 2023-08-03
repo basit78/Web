@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import AbdulBasit from "../assets/AbdulBasit.pdf";
+import AnhaNaz from "../assets/AnhaNaz.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -45,7 +45,7 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Abdul Basit
+            Anha Naz
           </p>
         </Link>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
               onClick={() => setActive(nav.title)}
             >
               {nav.id === "resume" ? (
-                <a href={AbdulBasit} download>
+                <a href={AnhaNaz} download>
                   {nav.title}
                 </a>
               ) : (
